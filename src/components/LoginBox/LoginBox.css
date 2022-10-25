@@ -1,0 +1,34 @@
+.loginBtn{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    width:30%;
+    height:60px;
+    background-color:var(--box-background);
+    font-size: 24px;
+    color: var(--box-font);
+    border: solid 2px var(--border);
+    border-bottom-color: var(--borderSpecial);
+    border-radius: 7px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns:80% 1fr;
+    align-items: center;
+}
+.login p{
+  text-align: center;
+}
+@media all and (max-width: 576px) {
+    .loginBtn{
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+         
+  };
+  .login p{
+    margin-bottom: 20px;
+  };
+};

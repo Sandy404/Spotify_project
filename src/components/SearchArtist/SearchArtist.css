@@ -1,0 +1,33 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: var(--box-background);
+    height:60px;
+    border:solid 2px var(--border);
+    border-radius: 8px;
+    padding:5px;
+   
+}
+.input{
+    width:90%;
+    border:none;
+    font-size: 22px;
+    color: var(--box-font);
+}
+.input::placeholder{
+    text-align: center;
+    font-size:22px;
+    color:var(--box-font);
+    font-weight: 400;
+}
+.input:focus{
+    outline: none;
+}
+.btn{
+    width:10%;
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}

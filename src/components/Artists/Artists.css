@@ -1,0 +1,42 @@
+.artistCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    border:solid 2px var(--card-border);
+    height:350px;
+    cursor: pointer;
+}
+
+.artistImg img{
+    width:100%;
+    height: 200px;
+}
+.artistInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    flex-grow: 2;
+}
+.infos h1{
+    font-size: 20px; 
+    color: var(--card-font);
+    font-weight: 400;
+}
+.infos p{
+    font-size:16px;
+    color:var(--card-font-light);
+}
+.rating{
+    color:var(--card-font-light);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 24px;
+}
+.rating li{
+    padding-right: 3px;
+}
+
