@@ -18,6 +18,7 @@ const ArtistSearchPage = () => {
 
     const handleSearchChange = (e) => {
       setSearch(e.target.value);
+  
     };
     const { submit}=SpotifyGetArtists(search);
   

@@ -3,13 +3,19 @@
     flex-direction: column;
     justify-content: stretch; 
     border:solid 2px var(--card-border);
-    height:350px;
+    height:400px;
     cursor: pointer;
 }
 
+.artistImg {
+    width:100%;
+    height: 250px;
+    overflow: hidden;
+}
 .artistImg img{
     width:100%;
-    height: 200px;
+    height:auto;
+  
 }
 .artistInfo{
     display: flex;

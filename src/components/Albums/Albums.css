@@ -5,10 +5,16 @@
     border:solid 2px var(--card-border);
     height:400px;
 }
-.albumImg img{
+.albumImg {
     width:100%;
     height: 200px;
+    overflow-y: hidden;
 }
+.albumImg img{
+    width: 100%;
+    height: auto;
+}
+
 .albumInfo{
     display: flex;
     flex-direction: column;

@@ -27,9 +27,18 @@ const SpotifyGetArtists = (e) => {
           }   ,
         })
         .then((response) => {
+
+        const filtered= response.data.artists.items.filter((el)=>{
+          const name=el.name.toLowerCase();
+          const search=e.toLowerCase();
+        
+        return name.startsWith(search);
+        }
+     );
+     console.log(filtered);
           
-          response.data.artists.items &&
-          dispatch(fetchArtists(response.data.artists.items)); 
+       
+          dispatch(fetchArtists(filtered));
       })
         .catch((error) => {
           console.log(error);

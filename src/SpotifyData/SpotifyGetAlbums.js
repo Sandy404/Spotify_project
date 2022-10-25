@@ -18,6 +18,7 @@ const Test= (id) =>{
   })
     .then((response) => {
       response.data && dispatch(fetchAlbums(response.data.items));
+      console.log(response.data);
   
     })
     .catch((error) => {
